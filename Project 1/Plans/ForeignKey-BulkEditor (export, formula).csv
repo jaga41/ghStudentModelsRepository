@@ -1,0 +1,18 @@
+ERwin Property Ids,1075850516::User Formatted Name  [read only],0::Object Type  [read only],1073742126::Name,1075849176::Physical Name,1075849763::Parent Entity  [read only],1075849764::Child Entity  [read only],1073742125::Definition,1075849148::Comments,
+1075839016::326,Electronic Payment Type R/6 Bitcoin,Relationship,R/6,R6,ElectronicPaymentType,Bitcoin,,,FK_Bitcoin_ElectronicPaymentType
+1075839016::335,Electronic Payment Type R/7 Electronic Payment Card,Relationship,R/7,R7,ElectronicPaymentType,ElectronicPaymentCard,,,FK_ElectronicPaymentCard_ElectronicPaymentType
+1075839016::344,Electronic Payment Card R/8 Gift Card,Relationship,R/8,R8,ElectronicPaymentCard,GiftCard,,,FK_GiftCard_ElectronicPaymentCard
+1075839016::356,Electronic Payment Card R/9 Credit Card,Relationship,R/9,R9,ElectronicPaymentCard,CreditCard,,,FK_CreditCard_ElectronicPaymentCard
+1075839016::449,R/15 (Electronic Payment Type to Electronic Payment),Relationship,R/15,R15,ElectronicPaymentType,ElectronicPayment,,,FK_ElectronicPayment_ElectronicPaymentType
+1075839016::584,Person R/20 Star,Relationship,R/20,R20,Person,Star,,,FK_Star_Person
+1075839016::617,Person R/22 Customer,Relationship,R/22,R22,Person,Customer,,,FK_Customer_Person
+1075839016::631,R/23 (Address to Person),Relationship,R/23,R23,Address,Person,,,FK_Person_Address
+1075839016::786,R/33 (Streaming Service to Streaming Service Subscription),Relationship,R/33,R33,StreamingService,StreamingServiceSubscription,,,FK_StreamingServiceSubscription_StreamingService
+1075839016::838,R/40 (Star to Movie Star),Relationship,R/40,R40,Star,MovieStar,,,FK_MovieStar_Star
+1075839016::851,R/41 (Movie to Movie Star),Relationship,R/41,R41,Movie,MovieStar,,,FK_MovieStar_Movie
+1075839016::864,R/42 (Customer to Customer Streaming Service Subscription),Relationship,R/42,R42,Customer,CustomerStreamingServiceSubscription,,,FK_CustomerStreamingServiceSubscription_Customer
+1075839016::877,R/43 (Streaming Service Subscription to Customer Streaming Service Subscription),Relationship,R/43,R43,StreamingServiceSubscription,CustomerStreamingServiceSubscription,,,FK_CustomerStreamingServiceSubscription_StreamingServiceSubscription
+1075839016::899,R/45 (Electronic Payment to Customer Electronic Payment),Relationship,R/45,R45,ElectronicPayment,CustomerElectronicPayment,,,FK_CustomerElectronicPayment_ElectronicPayment
+1075839016::907,R/46 (Customer to Customer Electronic Payment),Relationship,R/46,R46,Customer,CustomerElectronicPayment,,,FK_CustomerElectronicPayment_Customer
+1075839016::1043,R/59 (Customer Streaming Service Subscription to Movie Customer Streaming Service Subscription),Relationship,R/59,R59,CustomerStreamingServiceSubscription,MovieCustomerStreamingServiceSubscription,,,FK_MovieCustomerStreamingServiceSubscription_CustomerStreamingServiceSubscription
+1075839016::1052,R/60 (Movie to Movie Customer Streaming Service Subscription),Relationship,R/60,R60,Movie,MovieCustomerStreamingServiceSubscription,,,FK_MovieCustomerStreamingServiceSubscription_Movie
