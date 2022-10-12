@@ -1,0 +1,7 @@
+Physical notation: IDEF1X -> IEEE Crow's Feet. Ticked view of NULL/NOT NULL, grid view. 
+Rename: Movie, Customer, Payment, Subscription "ID" -> "Id". 
+Moved ExpirationDate and CVC from CreditCard to CardPayment because those attributes are also shared with GiftCard. Renamed CVC-> SecurityCode and changed datatype integer->varchar(4).
+Changed datatype of CardExpirationDate: datetime->date. ToDo: Add constraint to CardExpirationDate to be in the form MM/YY. 
+Fixed some typos: Synopsys->Synopsis. MonthyCost->MonthlyCost
+Prefixed table name to columns, so columns are TableName+ColumnName, e.g: Description->SubscriptionTierDescription. Did the same to all columns in Employee and other tables.
+What's DateCreated under Star? Need to verify before removal. 
